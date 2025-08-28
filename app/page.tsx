@@ -32,8 +32,7 @@ export default function HomePage() {
               <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/discord.179eb64460f7c216746c.png" x="86%" y="30%" rotate={-6} opacity={0.9} className="hidden md:block animate-float-slow" />
               <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/facebook.2c95929eba23324186a4.png" x="14%" y="58%" rotate={-8} opacity={0.85} className="scale-75 md:scale-100 animate-float-slow" />
               <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/openAI.d5cafebe1ddb401d1cac.png" x="78%" y="56%" rotate={10} opacity={0.85} className="hidden md:block animate-float-slow" />
-            
-            </div>
+            </>
           </FadeIn>
 
           <>
