@@ -4,7 +4,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "bewildcard.com" },
-      { protocol: "https", hostname: "assets.vercel.com" }
+      { protocol: "https", hostname: "assets.vercel.com" },
+      { protocol: "https", hostname: "cdn-bewildcard.wildcard.com.cn" }
     ]
   }
 };
