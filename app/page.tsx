@@ -18,7 +18,7 @@ export default function HomePage() {
                 轻松订阅
               </h1>
               <p className="mt-2 text-[44px] md:text-[64px] font-extrabold text-brand-600">
-                Cursor Pro
+                OpenAI API
               </p>
               <div className="mt-8 flex items-center justify-center gap-4">
                 <Link href="#" className="btn btn-primary h-14 px-8 text-lg">立即体验</Link>
@@ -26,22 +26,22 @@ export default function HomePage() {
               </div>
             </div>
             <>
-              <Sticker src="https://bewildcard.com/stickers/aws.png" x="6%" y="8%" rotate={-12} opacity={0.95} className="scale-75 md:scale-100" />
-              <Sticker src="https://bewildcard.com/stickers/apple.png" x="18%" y="24%" rotate={8} opacity={0.9} className="hidden md:block" />
-              <Sticker src="https://bewildcard.com/stickers/ai.png" x="70%" y="12%" rotate={5} opacity={0.95} className="hidden md:block" />
-              <Sticker src="https://bewildcard.com/stickers/ship.png" x="86%" y="30%" rotate={-6} opacity={0.9} className="hidden md:block" />
-              <Sticker src="https://bewildcard.com/stickers/facebook.png" x="14%" y="58%" rotate={-8} opacity={0.85} className="scale-75 md:scale-100" />
-              <Sticker src="https://bewildcard.com/stickers/openai.png" x="78%" y="56%" rotate={10} opacity={0.85} className="hidden md:block" />
+              <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/amazon.8e082f47fd190e17717d.png" x="6%" y="8%" rotate={-12} opacity={0.95} className="scale-75 md:scale-100" />
+              <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/apple.781b714de2311b3c0358.png" x="18%" y="24%" rotate={8} opacity={0.9} className="hidden md:block" />
+              <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/claude.622f89215abf1d86f2e4.png" x="70%" y="12%" rotate={5} opacity={0.95} className="hidden md:block" />
+              <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/discord.179eb64460f7c216746c.png" x="86%" y="30%" rotate={-6} opacity={0.9} className="hidden md:block" />
+              <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/facebook.2c95929eba23324186a4.png" x="14%" y="58%" rotate={-8} opacity={0.85} className="scale-75 md:scale-100" />
+              <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/openAI.d5cafebe1ddb401d1cac.png" x="78%" y="56%" rotate={10} opacity={0.85} className="hidden md:block" />
             </>
             </div>
           </FadeIn>
 
           <>
-            <Sticker src="https://bewildcard.com/stickers/github.png" x="8%" y="8%" rotate={-12} opacity={0.95} className="scale-75 md:scale-100" />
-            <Sticker src="https://bewildcard.com/stickers/google.png" x="18%" y="22%" rotate={8} opacity={0.9} className="hidden md:block" />
-            <Sticker src="https://bewildcard.com/stickers/eth.png" x="72%" y="12%" rotate={5} opacity={0.95} className="hidden md:block" />
-            <Sticker src="https://bewildcard.com/stickers/bolt.png" x="86%" y="28%" rotate={-6} opacity={0.9} className="hidden md:block" />
-            <Sticker src="https://bewildcard.com/stickers/facebook.png" x="14%" y="56%" rotate={-8} opacity={0.85} className="scale-75 md:scale-100" />
+            <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/github.eb6b2cd9b152e26df29e.png" x="8%" y="8%" rotate={-12} opacity={0.95} className="scale-75 md:scale-100" />
+            <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/google.c0a1ffab09641599ec51.png" x="18%" y="22%" rotate={8} opacity={0.9} className="hidden md:block" />
+            <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/cursor.facf092aed1594ae59be.png" x="72%" y="12%" rotate={5} opacity={0.95} className="hidden md:block" />
+            <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/poe.f7aab7f8d5720ad344c7.png" x="86%" y="28%" rotate={-6} opacity={0.9} className="hidden md:block" />
+            <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/facebook.2c95929eba23324186a4.png" x="14%" y="56%" rotate={-8} opacity={0.85} className="scale-75 md:scale-100" />
       <section className="container py-16">
         <div className="grid gap-6 md:grid-cols-3">
           {[0,1,2].map((i) => (
