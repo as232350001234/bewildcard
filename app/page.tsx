@@ -2,22 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
+import dynamic from "next/dynamic";
+const Sticker = dynamic(() => import("@/components/Sticker"), { ssr: false });
+
   return (
     <main>
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="h-full w-full" />
         </div>
-        <div className="container py-28 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+        <div className="container py-[var(--hero-pad)] text-center relative">
+          <h1 className="text-[44px] md:text-[64px] font-extrabold leading-tight tracking-tight">
             WildCard
             <br />
             轻松订阅
           </h1>
-          <p className="mt-4 text-4xl md:text-5xl font-semibold text-brand-600">
+          <p className="mt-3 text-[40px] md:text-[56px] font-extrabold text-brand-600">
             OpenAI API
           </p>
-          <div className="mt-8 flex items-center justify-center gap-4">
+          <div className="mt-7 flex items-center justify-center gap-4">
             <Link href="#" className="btn btn-primary h-12 px-6 text-lg">
               立即体验
             </Link>
@@ -26,23 +29,22 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="relative mt-20 grid grid-cols-4 md:grid-cols-8 gap-8 opacity-90">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <div key={i} className="mx-auto">
-                <svg width="64" height="64" viewBox="0 0 64 64" className="opacity-90">
-                  <defs>
-                    <linearGradient id={`g${i}`} x1="0" x2="1" y1="0" y2="1">
-                      <stop offset="0%" stopColor="#86a7ff" />
-                      <stop offset="100%" stopColor="#356aff" />
-                    </linearGradient>
-                  </defs>
-                  <circle cx="32" cy="32" r="30" fill="url(#g0)" opacity="0.15" />
-                  <circle cx="32" cy="32" r="22" fill="url(#g0)" />
-                  <text x="32" y="38" textAnchor="middle" fontSize="20" fontWeight="700" fill="white">W</text>
-                </svg>
-              </div>
-            ))}
-          </div>
+          <Sticker x="8%" y="8%" rotate={-12} opacity={0.95} />
+          <Sticker x="18%" y="22%" rotate={8} opacity={0.9} />
+          <Sticker x="72%" y="12%" rotate={5} opacity={0.95} />
+          <Sticker x="86%" y="28%" rotate={-6} opacity={0.9} />
+          <Sticker x="14%" y="56%" rotate={-8} opacity={0.85} />
+          <Sticker x="78%" y="54%" rotate={10} opacity={0.85} />
+
+          {/* Stickers */}
+          {/* Using generic gradient W stickers as placeholders to match layout without external assets */}
+        </div>
+
+        {/* Positioned stickers around hero */}
+        {/* top-left cluster */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <div className="absolute inset-0">
+          {/* import component inline to avoid dynamic issues in app dir */}
         </div>
       </section>
 

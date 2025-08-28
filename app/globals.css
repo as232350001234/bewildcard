@@ -4,6 +4,7 @@
 
 :root {
   --bg: #dbeaf6;
+  --hero-pad: 7rem;
 }
 
 html, body {
