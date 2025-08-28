@@ -4,9 +4,14 @@
 
 :root {
   --bg: #dbeaf6;
-  --hero-pad: 7rem;
+  --hero-pad: 5rem;
   --hero-gradient: radial-gradient(900px 400px at 50% -50px, rgba(255,255,255,0.65), rgba(255,255,255,0) 70%);
+}
 
+@media (min-width: 768px) {
+  :root {
+    --hero-pad: 7rem;
+  }
 }
 
 html, body {
