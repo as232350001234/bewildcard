@@ -66,6 +66,24 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      <section className="container py-20">
+        <div className="grid gap-6 md:grid-cols-3">
+          {[1, 2, 3].map((n, i) => (
+            <FadeIn key={n} delay={i * 80}>
+              <div className="relative overflow-hidden rounded-3xl bg-white p-8 border border-black/10 shadow-sm">
+                <div className="pointer-events-none absolute -top-6 -left-2 text-[140px] font-extrabold leading-none text-black/5 select-none">
+                  {n}
+                </div>
+                <h3 className="text-xl font-bold tracking-tight">步骤 {n}</h3>
+                <p className="mt-3 text-sm text-neutral-600">
+                  还原原站“支持全球优质服务”样式的步骤说明，含大号半透明序号与蓝灰背景风格。
+                </p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </section>
+
 
             <Sticker src="https://bewildcard.com/stickers/chatgpt.png" x="78%" y="54%" rotate={10} opacity={0.85} className="hidden md:block" />
           </>
@@ -132,21 +150,26 @@ export default function HomePage() {
         </FadeIn>
       </section>
 
-      <section className="container py-16">
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            ["非常便捷", "几分钟就能用上，流程很顺畅。"],
-            ["价格合理", "订阅成本透明，性价比高。"],
-            ["客服靠谱", "遇到问题能快速响应并解决。"]
-          ].map(([t, d], i) => (
-            <FadeIn key={i} delay={i * 80}>
-              <div className="rounded-2xl bg-white p-6 border border-black/10 shadow-sm">
-                <div className="text-lg font-semibold">{t}</div>
-                <p className="mt-2 text-sm text-neutral-600">{d}</p>
-                <div className="mt-4 text-xs text-neutral-400">— 用户反馈</div>
-              </div>
-            </FadeIn>
-          ))}
+      <section className="container py-20">
+        <div className="rounded-3xl bg-[#FFF7D6] p-8 md:p-12 border border-black/5">
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              ["非常便捷", "几分钟就能用上，流程很顺畅。"],
+              ["价格合理", "订阅成本透明，性价比高。"],
+              ["客服靠谱", "遇到问题能快速响应并解决。"]
+            ].map(([t, d], i) => (
+              <FadeIn key={i} delay={i * 80}>
+                <div className="rounded-2xl bg-white p-6 border border-black/10 shadow-[0_10px_20px_rgba(0,0,0,.06)]">
+                  <div className="flex items-center gap-2">
+                    <svg width="18" height="18" viewBox="0 0 24 24" className="text-yellow-500"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <div className="text-lg font-semibold">{t}</div>
+                  </div>
+                  <p className="mt-2 text-sm text-neutral-700">{d}</p>
+                  <div className="mt-4 text-xs text-neutral-400">— 用户反馈</div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 
