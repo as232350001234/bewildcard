@@ -23,7 +23,9 @@ export default function Sticker({ src, size = 88, x, y, rotate = 0, opacity = 1,
       }}
     >
       {src ? (
-        <Image src={src} alt="" width={size} height={size} priority />
+        <div className="rounded-full bg-white p-1 shadow-[0_6px_14px_rgba(0,0,0,.12)]">
+          <Image src={src} alt="" width={size} height={size} priority />
+        </div>
       ) : (
         <svg width={size} height={size} viewBox="0 0 88 88">
           <defs>
@@ -32,10 +34,11 @@ export default function Sticker({ src, size = 88, x, y, rotate = 0, opacity = 1,
               <stop offset="100%" stopColor="#356aff" />
             </linearGradient>
           </defs>
-          <circle cx="44" cy="44" r="40" fill="url(#s)" />
-          <text x="44" y="52" textAnchor="middle" fontSize="32" fontWeight="800" fill="#fff">
-            W
-          </text>
+          <g>
+            <circle cx="44" cy="44" r="42" fill="#fff" />
+            <circle cx="44" cy="44" r="38" fill="url(#s)" />
+          </g>
+          <text x="44" y="52" textAnchor="middle" fontSize="32" fontWeight="800" fill="#fff">W</text>
         </svg>
       )}
     </div>

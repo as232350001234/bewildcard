@@ -6,21 +6,29 @@ export default function HomePage() {
   return (
     <main>
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="h-full w-full" />
-        </div>
-        <div className="container py-[var(--hero-pad)] text-center relative">
-          <h1 className="text-[44px] md:text-[64px] font-extrabold leading-tight tracking-tight">
-            WildCard
-            <br />
-            轻松订阅
-          </h1>
-          <p className="mt-3 text-[40px] md:text-[56px] font-extrabold text-brand-600">
-            OpenAI API
-          </p>
-          <div className="mt-7 flex items-center justify-center gap-4">
-            <Link href="#" className="btn btn-primary h-12 px-6 text-lg">立即体验</Link>
-            <Link href="#faq" className="btn btn-secondary h-12 px-6 text-lg">常见问题</Link>
+        <div className="absolute inset-0 pointer-events-none" />
+        <div className="container py-[var(--hero-pad)] relative">
+          <div className="mx-auto rounded-[32px] md:rounded-[40px] bg-[var(--bg)]/90 border border-white/60 shadow-[inset_0_0_0_1px_rgba(255,255,255,.4),0_8px_24px_rgba(15,23,42,.08)] p-6 md:p-12">
+            <div className="text-center">
+              <h1 className="text-[52px] md:text-[86px] font-extrabold leading-[1.05] tracking-tight text-[var(--ink)]">
+                WildCard
+                <br />
+                轻松订阅
+              </h1>
+              <p className="mt-2 text-[44px] md:text-[64px] font-extrabold text-brand-600">
+                Cursor Pro
+              </p>
+              <div className="mt-8 flex items-center justify-center gap-4">
+                <Link href="#" className="btn btn-primary h-14 px-8 text-lg">立即体验</Link>
+                <Link href="#faq" className="btn btn-secondary h-14 px-8 text-lg">常见问题</Link>
+              </div>
+            </div>
+            <Sticker x="6%" y="8%" rotate={-12} opacity={0.95} className="scale-75 md:scale-100" />
+            <Sticker x="18%" y="24%" rotate={8} opacity={0.9} className="hidden md:block" />
+            <Sticker x="70%" y="12%" rotate={5} opacity={0.95} className="hidden md:block" />
+            <Sticker x="86%" y="30%" rotate={-6} opacity={0.9} className="hidden md:block" />
+            <Sticker x="14%" y="58%" rotate={-8} opacity={0.85} className="scale-75 md:scale-100" />
+            <Sticker x="78%" y="56%" rotate={10} opacity={0.85} className="hidden md:block" />
           </div>
 
           <Sticker x="8%" y="8%" rotate={-12} opacity={0.95} className="scale-75 md:scale-100" />
