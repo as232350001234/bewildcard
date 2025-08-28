@@ -42,6 +42,31 @@ export default function HomePage() {
             <Sticker src="https://bewildcard.com/stickers/eth.png" x="72%" y="12%" rotate={5} opacity={0.95} className="hidden md:block" />
             <Sticker src="https://bewildcard.com/stickers/bolt.png" x="86%" y="28%" rotate={-6} opacity={0.9} className="hidden md:block" />
             <Sticker src="https://bewildcard.com/stickers/facebook.png" x="14%" y="56%" rotate={-8} opacity={0.85} className="scale-75 md:scale-100" />
+      <section className="container py-16">
+        <div className="grid gap-6 md:grid-cols-3">
+          {[0,1,2].map((i) => (
+            <FadeIn key={i} delay={i * 80}>
+              <div className="relative rounded-3xl p-[1px]"
+                   style={{
+                     background: "linear-gradient(135deg, rgba(255,255,255,.18), rgba(255,255,255,0) 30%), radial-gradient(120% 120% at 0% 0%, rgba(99,102,241,.45), rgba(59,130,246,.25) 45%, rgba(0,0,0,0) 60%)",
+                   }}>
+                <div className="rounded-3xl bg-black text-white p-6 md:p-8 min-h-[220px] shadow-[0_12px_30px_rgba(0,0,0,.35)]">
+                  <div className="text-sm text-white/60">优势 {i + 1}</div>
+                  <h3 className="mt-2 text-2xl font-bold tracking-tight">更快更稳的订阅体验</h3>
+                  <p className="mt-3 text-white/70 text-sm leading-relaxed">
+                    按照原站版式与留白构建的黑色卡片三联，带有彩虹晕边与内阴影，滚动入场淡入上移。
+                  </p>
+                  <div className="mt-5 inline-flex items-center gap-2 text-brand-300">
+                    <span className="text-sm">了解更多</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" className="opacity-80"><path fill="currentColor" d="M13.172 12L8.222 7.05l1.414-1.414L16 12l-6.364 6.364l-1.414-1.414z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </section>
+
             <Sticker src="https://bewildcard.com/stickers/chatgpt.png" x="78%" y="54%" rotate={10} opacity={0.85} className="hidden md:block" />
           </>
 
