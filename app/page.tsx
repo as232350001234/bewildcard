@@ -69,6 +69,18 @@ export default function HomePage() {
             </ul>
           </div>
         </div>
+      <section className="container py-8">
+        <div className="rounded-3xl bg-white/70 backdrop-blur p-4 border border-black/5">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-6 items-center justify-items-center opacity-80">
+            {["OpenAI", "Google", "Apple", "Meta", "X", "Microsoft"].map((name) => (
+              <div key={name} className="text-sm md:text-base font-semibold text-neutral-500">
+                {name}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       </section>
 
       </section>
