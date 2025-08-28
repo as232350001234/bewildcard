@@ -1,10 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import Sticker from "@/components/Sticker";
 
 export default function HomePage() {
-import dynamic from "next/dynamic";
-const Sticker = dynamic(() => import("@/components/Sticker"), { ssr: false });
-
   return (
     <main>
       <section className="relative overflow-hidden">
@@ -35,16 +33,6 @@ const Sticker = dynamic(() => import("@/components/Sticker"), { ssr: false });
           <Sticker x="86%" y="28%" rotate={-6} opacity={0.9} />
           <Sticker x="14%" y="56%" rotate={-8} opacity={0.85} />
           <Sticker x="78%" y="54%" rotate={10} opacity={0.85} />
-
-          {/* Stickers */}
-          {/* Using generic gradient W stickers as placeholders to match layout without external assets */}
-        </div>
-
-        {/* Positioned stickers around hero */}
-        {/* top-left cluster */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <div className="absolute inset-0">
-          {/* import component inline to avoid dynamic issues in app dir */}
         </div>
       </section>
 
