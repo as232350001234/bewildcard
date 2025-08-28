@@ -14,7 +14,7 @@ type Props = {
 export default function Sticker({ src, size = 88, x, y, rotate = 0, opacity = 1, className }: Props) {
   return (
     <div
-      className={`pointer-events-none absolute ${className ?? ""}`}
+      className={`pointer-events-none absolute z-0 ${className ?? ""}`}
       style={{
         left: x,
         top: y,
