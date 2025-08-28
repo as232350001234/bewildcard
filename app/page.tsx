@@ -19,12 +19,8 @@ export default function HomePage() {
             OpenAI API
           </p>
           <div className="mt-7 flex items-center justify-center gap-4">
-            <Link href="#" className="btn btn-primary h-12 px-6 text-lg">
-              立即体验
-            </Link>
-            <Link href="#faq" className="btn btn-secondary h-12 px-6 text-lg">
-              常见问题
-            </Link>
+            <Link href="#" className="btn btn-primary h-12 px-6 text-lg">立即体验</Link>
+            <Link href="#faq" className="btn btn-secondary h-12 px-6 text-lg">常见问题</Link>
           </div>
 
           <Sticker x="8%" y="8%" rotate={-12} opacity={0.95} />
@@ -42,22 +38,22 @@ export default function HomePage() {
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             {Array.from({ length: 6 }).map((_, i) => (
               <div key={i} className="rounded-2xl border border-neutral-200 p-6 bg-white hover:shadow-md transition-shadow">
-                <div className="h-12 w-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 font-bold">
-                  W
-                </div>
+                <div className="h-12 w-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 font-bold">W</div>
                 <div className="mt-4 text-lg font-semibold">优势 {i + 1}</div>
-                <p className="mt-2 text-sm text-neutral-600">
-                  与原站版式、留白、色彩接近的占位内容，稍后替换为精确文案与图形。
-                </p>
+                <p className="mt-2 text-sm text-neutral-600">与原站版式、留白、色彩接近的占位内容，稍后替换为精确文案与图形。</p>
               </div>
             ))}
           </div>
         </div>
+      </section>
+
       <section className="container py-10">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-3xl bg-white p-6 md:p-8 border border-black/10">
             <div className="text-sm text-brand-600 font-semibold">收费标准</div>
-            <div className="mt-2 text-3xl font-bold">$11.99 <span className="text-base font-medium text-neutral-500">/ 1年</span></div>
+            <div className="mt-2 text-3xl font-bold">
+              $11.99 <span className="text-base font-medium text-neutral-500">/ 1年</span>
+            </div>
             <div className="mt-1 text-sm text-neutral-600">0 月费</div>
           </div>
           <div className="rounded-3xl bg-white p-6 md:p-8 border border-black/10">
@@ -69,6 +65,8 @@ export default function HomePage() {
             </ul>
           </div>
         </div>
+      </section>
+
       <section className="container py-8">
         <div className="rounded-3xl bg-white/70 backdrop-blur p-4 border border-black/5">
           <div className="grid grid-cols-2 md:grid-cols-6 gap-6 items-center justify-items-center opacity-80">
@@ -80,6 +78,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       <section className="container py-16">
         <div className="grid md:grid-cols-3 gap-6">
           {[
@@ -96,14 +95,6 @@ export default function HomePage() {
         </div>
       </section>
 
-
-      </section>
-
-      </section>
-
-      <section id="faq" className="container py-16">
-        <h2 className="text-3xl font-bold">常见问题</h2>
-        <div className="mt-6 divide-y divide-neutral-200 rounded-2xl bg-white">
       <section className="container py-20">
         <div className="rounded-3xl bg-white p-10 md:p-16 text-center border border-black/10 shadow-sm">
           <h2 className="text-3xl md:text-4xl font-extrabold">马上开始</h2>
@@ -114,6 +105,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section id="faq" className="container py-16">
+        <h2 className="text-3xl font-bold">常见问题</h2>
+        <div className="mt-6 divide-y divide-neutral-200 rounded-2xl bg-white">
           {[
             ["如何开通？", "提交必要信息后即可快速开通。"],
             ["支持哪些服务？", "覆盖 OpenAI 等主流海外服务。"],
