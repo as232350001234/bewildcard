@@ -62,10 +62,6 @@ export default function HomePage() {
             </FadeIn>
           ))}
         </div>
-      </section>
-        </div>
-      </section>
-
       <section id="features" className="container py-16">
         <FadeIn>
           <div className="rounded-3xl bg-white p-6 md:p-10 shadow-sm">
