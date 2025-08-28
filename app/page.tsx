@@ -63,6 +63,24 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+      <section className="container py-10">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="rounded-3xl bg-white p-6 md:p-8 border border-black/10">
+            <div className="text-sm text-brand-600 font-semibold">收费标准</div>
+            <div className="mt-2 text-3xl font-bold">$11.99 <span className="text-base font-medium text-neutral-500">/ 1年</span></div>
+            <div className="mt-1 text-sm text-neutral-600">0 月费</div>
+          </div>
+          <div className="rounded-3xl bg-white p-6 md:p-8 border border-black/10">
+            <div className="text-sm text-brand-600 font-semibold">服务承诺</div>
+            <ul className="mt-2 space-y-1 text-sm text-neutral-700 list-disc pl-5">
+              <li>ChatGPT 订阅不成功全额退款</li>
+              <li>支持全自动订阅 ChatGPT Plus</li>
+              <li>可同时订阅 4 个 ChatGPT Plus</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       </section>
 
       <section id="faq" className="container py-16">

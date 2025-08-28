@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[var(--bg)]/80 backdrop-blur border-b border-black/5">
-      <div className="container h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-semibold">
+      <div className="container h-14 md:h-16 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 font-semibold text-sm md:text-base">
           <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-black text-white">W</span>
           WildCard
         </Link>
