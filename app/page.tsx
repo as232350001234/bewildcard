@@ -32,7 +32,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="container py-16">
+      <section id="features" className="container py-16">
         <div className="rounded-3xl bg-white p-6 md:p-10 shadow-sm">
           <div className="text-2xl font-semibold">WildCard 功能卡片示意</div>
           <div className="mt-6 grid gap-6 md:grid-cols-3">
@@ -95,7 +95,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="container py-20">
+      <section id="cta" className="container py-20">
         <div className="rounded-3xl bg-white p-10 md:p-16 text-center border border-black/10 shadow-sm">
           <h2 className="text-3xl md:text-4xl font-extrabold">马上开始</h2>
           <p className="mt-3 text-neutral-600">轻松订阅海外服务，体验更高效的工作与创作。</p>

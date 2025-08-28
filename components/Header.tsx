@@ -9,9 +9,9 @@ export default function Header() {
           WildCard
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <Link href="#" className="hover:opacity-80">功能</Link>
+          <Link href="#features" className="hover:opacity-80">功能</Link>
           <Link href="#faq" className="hover:opacity-80">常见问题</Link>
-          <Link href="#" className="btn btn-primary h-9 px-4 text-sm">立即体验</Link>
+          <Link href="#cta" className="btn btn-primary h-9 px-4 text-sm">立即体验</Link>
         </nav>
       </div>
     </header>
