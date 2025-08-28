@@ -27,18 +27,19 @@ export default function HomePage() {
           </div>
 
           <div className="relative mt-20 grid grid-cols-4 md:grid-cols-8 gap-8 opacity-90">
-            {[
-              "/icons/aws.png",
-              "/icons/apple.png",
-              "/icons/github.png",
-              "/icons/google.png",
-              "/icons/openai.png",
-              "/icons/discord.png",
-              "/icons/ethereum.png",
-              "/icons/anthropic.png"
-            ].map((src, i) => (
-              <div key={i} className="mx-auto opacity-90">
-                <Image alt="" src={src} width={64} height={64} />
+            {Array.from({ length: 8 }).map((_, i) => (
+              <div key={i} className="mx-auto">
+                <svg width="64" height="64" viewBox="0 0 64 64" className="opacity-90">
+                  <defs>
+                    <linearGradient id={`g${i}`} x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0%" stopColor="#86a7ff" />
+                      <stop offset="100%" stopColor="#356aff" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="32" cy="32" r="30" fill="url(#g0)" opacity="0.15" />
+                  <circle cx="32" cy="32" r="22" fill="url(#g0)" />
+                  <text x="32" y="38" textAnchor="middle" fontSize="20" fontWeight="700" fill="white">W</text>
+                </svg>
               </div>
             ))}
           </div>
