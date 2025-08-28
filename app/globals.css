@@ -40,4 +40,13 @@ body {
 .btn-secondary {
   @apply bg-white text-neutral-900 hover:bg-neutral-100;
   box-shadow: 0 6px 14px rgba(0,0,0,.08);
+@keyframes float-slow {
+  0% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+  50% { transform: translateY(-6px) rotate(calc(var(--rot, 0deg) + 1deg)); }
+  100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
 }

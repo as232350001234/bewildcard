@@ -18,6 +18,7 @@ export default function Sticker({ src, size = 88, x, y, rotate = 0, opacity = 1,
       style={{
         left: x,
         top: y,
+        ["--rot" as any]: `${rotate}deg`,
         transform: `rotate(${rotate}deg)`,
         opacity,
       }}
