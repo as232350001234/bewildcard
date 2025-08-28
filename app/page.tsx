@@ -10,7 +10,7 @@ export default function HomePage() {
         <div className="absolute inset-0 pointer-events-none" />
         <div className="container py-[var(--hero-pad)] relative">
           <FadeIn>
-            <div className="mx-auto rounded-[32px] md:rounded-[40px] bg-[var(--bg)]/90 border border-white/60 shadow-[inset_0_0_0_1px_rgba(255,255,255,.4),0_8px_24px_rgba(15,23,42,.08)] p-6 md:p-12">
+            <div className="mx-auto rounded-[36px] md:rounded-[48px] bg-white/55 backdrop-blur-sm border border-white/70 shadow-[0_20px_60px_rgba(4,9,20,.18)] ring-1 ring-white/40 p-8 md:p-14">
               <div className="text-center">
               <h1 className="text-[52px] md:text-[86px] font-extrabold leading-[1.05] tracking-tight text-[var(--ink)]">
                 WildCard

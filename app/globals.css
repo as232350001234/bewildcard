@@ -35,7 +35,7 @@ body {
   @apply inline-flex items-center justify-center rounded-full font-semibold transition-all;
 }
 .btn-primary {
-  @apply bg-[#3b82f6] text-white hover:bg-[#2563eb] shadow-[0_6px_14px_rgba(37,99,235,.35)];
+  @apply bg-[#2F6EEB] text-white hover:bg-[#2460D6] shadow-[0_10px_24px_rgba(36,96,214,.35)];
 }
 .btn-secondary {
   @apply bg-white text-neutral-900 hover:bg-neutral-100;
