@@ -85,7 +85,7 @@ export default function HomePage() {
       </section>
 
 
-            <Sticker src="https://bewildcard.com/stickers/chatgpt.png" x="78%" y="54%" rotate={10} opacity={0.85} className="hidden md:block" />
+            <Sticker src="https://cdn-bewildcard.wildcard.com.cn/static/media/openAI.d5cafebe1ddb401d1cac.png" x="78%" y="54%" rotate={10} opacity={0.85} className="hidden md:block" />
           </>
 
         </div>
