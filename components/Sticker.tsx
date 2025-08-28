@@ -8,12 +8,13 @@ type Props = {
   y: string;
   rotate?: number;
   opacity?: number;
+  className?: string;
 };
 
-export default function Sticker({ src, size = 88, x, y, rotate = 0, opacity = 1 }: Props) {
+export default function Sticker({ src, size = 88, x, y, rotate = 0, opacity = 1, className }: Props) {
   return (
     <div
-      className="pointer-events-none absolute"
+      className={`pointer-events-none absolute ${className ?? ""}`}
       style={{
         left: x,
         top: y,

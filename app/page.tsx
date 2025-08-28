@@ -23,12 +23,12 @@ export default function HomePage() {
             <Link href="#faq" className="btn btn-secondary h-12 px-6 text-lg">常见问题</Link>
           </div>
 
-          <Sticker x="8%" y="8%" rotate={-12} opacity={0.95} />
-          <Sticker x="18%" y="22%" rotate={8} opacity={0.9} />
-          <Sticker x="72%" y="12%" rotate={5} opacity={0.95} />
-          <Sticker x="86%" y="28%" rotate={-6} opacity={0.9} />
-          <Sticker x="14%" y="56%" rotate={-8} opacity={0.85} />
-          <Sticker x="78%" y="54%" rotate={10} opacity={0.85} />
+          <Sticker x="8%" y="8%" rotate={-12} opacity={0.95} className="scale-75 md:scale-100" />
+          <Sticker x="18%" y="22%" rotate={8} opacity={0.9} className="hidden md:block" />
+          <Sticker x="72%" y="12%" rotate={5} opacity={0.95} className="hidden md:block" />
+          <Sticker x="86%" y="28%" rotate={-6} opacity={0.9} className="hidden md:block" />
+          <Sticker x="14%" y="56%" rotate={-8} opacity={0.85} className="scale-75 md:scale-100" />
+          <Sticker x="78%" y="54%" rotate={10} opacity={0.85} className="hidden md:block" />
         </div>
       </section>
 
