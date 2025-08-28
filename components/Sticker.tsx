@@ -23,7 +23,7 @@ export default function Sticker({ src, size = 88, x, y, rotate = 0, opacity = 1,
       }}
     >
       {src ? (
-        <div className="rounded-full bg-white p-1 shadow-[0_6px_14px_rgba(0,0,0,.12)]">
+        <div className="rounded-2xl bg-white p-1 shadow-[0_6px_14px_rgba(0,0,0,.12)]">
           <Image src={src} alt="" width={size} height={size} priority />
         </div>
       ) : (
