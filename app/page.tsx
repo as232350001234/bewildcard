@@ -9,7 +9,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" />
         <div className="container py-[var(--hero-pad)] relative">
-          <FadeIn>
+          <FadeIn initialInView>
             <div className="mx-auto rounded-[36px] md:rounded-[48px] bg-white/75 backdrop-blur-sm border border-white/70 shadow-[0_20px_60px_rgba(4,9,20,.18)] ring-1 ring-white/40 p-8 md:p-14 z-10 relative">
               <div className="text-center">
               <h1 className="text-[52px] md:text-[86px] font-extrabold leading-[1.05] tracking-tight text-[var(--ink)]">
@@ -112,7 +112,7 @@ export default function HomePage() {
 
       <section className="container py-10">
         <div className="grid md:grid-cols-2 gap-6">
-          <FadeIn>
+          <FadeIn initialInView>
             <div className="rounded-3xl bg-white p-6 md:p-8 border border-black/10">
               <div className="text-sm text-brand-600 font-semibold">收费标准</div>
               <div className="mt-2 text-3xl font-bold">
