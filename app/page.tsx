@@ -80,6 +80,22 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <section className="container py-16">
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            ["非常便捷", "几分钟就能用上，流程很顺畅。"],
+            ["价格合理", "订阅成本透明，性价比高。"],
+            ["客服靠谱", "遇到问题能快速响应并解决。"]
+          ].map(([t, d], i) => (
+            <div key={i} className="rounded-2xl bg-white p-6 border border-black/10 shadow-sm">
+              <div className="text-lg font-semibold">{t}</div>
+              <p className="mt-2 text-sm text-neutral-600">{d}</p>
+              <div className="mt-4 text-xs text-neutral-400">— 用户反馈</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       </section>
 
@@ -88,6 +104,16 @@ export default function HomePage() {
       <section id="faq" className="container py-16">
         <h2 className="text-3xl font-bold">常见问题</h2>
         <div className="mt-6 divide-y divide-neutral-200 rounded-2xl bg-white">
+      <section className="container py-20">
+        <div className="rounded-3xl bg-white p-10 md:p-16 text-center border border-black/10 shadow-sm">
+          <h2 className="text-3xl md:text-4xl font-extrabold">马上开始</h2>
+          <p className="mt-3 text-neutral-600">轻松订阅海外服务，体验更高效的工作与创作。</p>
+          <div className="mt-6">
+            <Link href="#" className="btn btn-primary h-12 px-6 text-lg">立即体验</Link>
+          </div>
+        </div>
+      </section>
+
           {[
             ["如何开通？", "提交必要信息后即可快速开通。"],
             ["支持哪些服务？", "覆盖 OpenAI 等主流海外服务。"],
